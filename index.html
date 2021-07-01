@@ -290,80 +290,247 @@
       <!-- third part -->
       <section class="container">
         <h2 class="text-center">Movies catalog</h2>
-        <div class="col-4">
-          <form method="GET" action="#" autocomplete="off" spellcheck="false">
-            <input
-              type="text"
-              class="form-control mb-3"
-              name="movie_name"
-              id="movie_name"
-              placeholder="ave"
-            />
+        <div class="d-flex">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <form method="GET" action="#" autocomplete="off" spellcheck="false">
+              <input
+                type="text"
+                class="form-control mb-3"
+                name="movie_name"
+                id="movie_name"
+                placeholder="ave"
+              />
 
-            <input
-              type="number"
-              class="form-control mb-3"
-              name="movie_number"
-              id="movie_number"
-              placeholder="5"
-            />
+              <input
+                type="number"
+                class="form-control mb-3"
+                name="movie_number"
+                id="movie_number"
+                placeholder="5"
+              />
 
-            <input
-              type="text"
-              class="form-control mb-3"
-              name="movie_list"
-              id="movie_list"
-              list="movie_listChoices"
-              placeholder="All"
-            />
-            <datalist id="movie_listChoices">
-              <option value="Avengers"></option>
-              <option value="Iron Man"></option>
-              <option value="Spider Man"></option>
-              <option value="Ant Man"></option>
-              <option value="Doctor Strange"></option>
-            </datalist>
+              <input
+                type="text"
+                class="form-control mb-3"
+                name="movie_list"
+                id="movie_list"
+                list="movie_listChoices"
+                placeholder="All"
+              />
+              <datalist id="movie_listChoices">
+                <option value="Avengers"></option>
+                <option value="Iron Man"></option>
+                <option value="Spider Man"></option>
+                <option value="Ant Man"></option>
+                <option value="Doctor Strange"></option>
+              </datalist>
 
-            <input
-              type="text"
-              class="form-control mb-3"
-              name="movie_quality"
-              id="movie_quality"
-              list="movie_qualityChoices"
-              placeholder="Rating (high to low)"
-            />
-            <datalist id="movie_qualityChoices">
-              <option value="high"></option>
-              <option value="medium"></option>
-              <option value="not bad"></option>
-              <option value="low"></option>
-            </datalist>
+              <input
+                type="text"
+                class="form-control mb-3"
+                name="movie_quality"
+                id="movie_quality"
+                list="movie_qualityChoices"
+                placeholder="Rating (high to low)"
+              />
+              <datalist id="movie_qualityChoices">
+                <option value="high"></option>
+                <option value="medium"></option>
+                <option value="not bad"></option>
+                <option value="low"></option>
+              </datalist>
 
-            <button class="btn btn-primary col-12 mb-3" type="submit">
-              Search
-            </button>
-          </form>
+              <button class="btn btn-primary col-12 mb-3" type="submit">
+                Search
+              </button>
+            </form>
 
-          <h3 class="h4 text-center mb-3">Bookmarked movies</h3>
-          <div class="border border-2 mb-3 p-3">
-            <h4 class="h5">Avengers: Infinity War</h4>
-            <button class="btn btn-danger" type="button">Remove</button>
+            <h3 class="h4 text-center mb-3">Bookmarked movies</h3>
+            <div class="border border-2 mb-3 p-3">
+              <h4 class="h5">Avengers: Infinity War</h4>
+              <button class="btn btn-danger" type="button">Remove</button>
+            </div>
+
+            <div class="border border-2 mb-3 p-3">
+              <h4 class="h5">Avengers: Infinity War</h4>
+              <button class="btn btn-danger" type="button">Remove</button>
+            </div>
+
+            <div class="border border-2 mb-3 p-3">
+              <h4 class="h5">Avengers: Infinity War</h4>
+              <button class="btn btn-danger" type="button">Remove</button>
+            </div>
           </div>
 
-          <div class="border border-2 mb-3 p-3">
-            <h4 class="h5">Avengers: Infinity War</h4>
-            <button class="btn btn-danger" type="button">Remove</button>
-          </div>
+          <div class="col-sm-12 col-md-6 col-lg-8 ps-3 pe-3 col-8">
+            <p class="h4">Search result: 39</p>
+            <p class="bg-info p-3 mb-3">
+              Use the form on the left to search for a movie
+            </p>
 
-          <div class="border border-2 mb-3 p-3">
-            <h4 class="h5">Avengers: Infinity War</h4>
-            <button class="btn btn-danger" type="button">Remove</button>
-          </div>
-        </div>
+            <div class="d-flex justify-content-between mb-4">
+              <!-- first video -->
+              <div class="col-md-12 col-lg-6 pe-1">
+                <div class="col-12 border border-2">
+                  <iframe
+                    class="col-12"
+                    height="250px"
+                    src="https://www.youtube.com/embed/aiRY36TPVo8"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <div class="p-3">
+                    <h3>Avengers: Infinity War</h3>
+                    <div class="d-flex align-items-center mb-4">
+                      <img
+                        src="./images/calendar.svg"
+                        alt="an icon of a calendar"
+                        width="20"
+                        height="20"
+                      />
+                      <p class="ms-2 mb-0">2018</p>
+                    </div>
 
-        <div>
-          <p>Search result: 39</p>
-          <p>Use the form on the left to search for a movie</p>
+                    <div class="d-flex align-items-center mb-4">
+                      <img
+                        src="./images/star.svg"
+                        alt="an icon of a calendar"
+                        width="25"
+                        height="25"
+                      />
+                      <p class="ms-2 mb-0">8.7</p>
+                    </div>
+
+                    <div class="d-flex justify-content-evenly">
+                      <div>
+                        <button
+                          class="btn border border-primary text-primary"
+                          type="button"
+                        >
+                          Watch trailer
+                        </button>
+                      </div>
+
+                      <div>
+                        <button
+                          class="btn border border-primary text-primary"
+                          type="button"
+                        >
+                          More info
+                        </button>
+                      </div>
+
+                      <div>
+                        <button
+                          class="btn border border-primary text-primary"
+                          type="button"
+                        >
+                          Bookmarks
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- second video -->
+              <div class="col-md-12 col-lg-6 ps-1">
+                <div class="col-12 border border-2">
+                  <iframe
+                    class="col-12"
+                    height="250px"
+                    src="https://www.youtube.com/embed/aiRY36TPVo8"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <div class="p-3">
+                    <h3>Avengers: Infinity War</h3>
+                    <div class="d-flex align-items-center mb-4">
+                      <img
+                        src="./images/calendar.svg"
+                        alt="an icon of a calendar"
+                        width="20"
+                        height="20"
+                      />
+                      <p class="ms-2 mb-0">2018</p>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-4">
+                      <img
+                        src="./images/star.svg"
+                        alt="an icon of a calendar"
+                        width="25"
+                        height="25"
+                      />
+                      <p class="ms-2 mb-0">8.7</p>
+                    </div>
+
+                    <div class="d-flex justify-content-evenly">
+                      <div>
+                        <button
+                          class="btn border border-primary text-primary"
+                          type="button"
+                        >
+                          Watch trailer
+                        </button>
+                      </div>
+
+                      <div>
+                        <button
+                          class="btn border border-primary text-primary"
+                          type="button"
+                        >
+                          More info
+                        </button>
+                      </div>
+
+                      <div>
+                        <button
+                          class="btn border border-primary text-primary"
+                          type="button"
+                        >
+                          Bookmarks
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center">
+              <ul class="d-flex justify-content-center list-unstyled">
+                <li>
+                  <button
+                    class="btn btn-primary rounded-0 rounded-start"
+                    type="button"
+                  >
+                    1
+                  </button>
+                </li>
+                <li>
+                  <button class="btn border border-1 rounded-0" type="button">
+                    2
+                  </button>
+                </li>
+                <li>
+                  <button class="btn border border-1 rounded-0" type="button">
+                    3
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="btn border border-1 rounded-0 rounded-end"
+                    type="button"
+                  >
+                    4
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </main>
