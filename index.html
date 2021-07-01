@@ -226,7 +226,7 @@
       </section>
 
       <!-- second part -->
-      <section class="container">
+      <section class="container mb-5">
         <h2 class="visually-hidden">I'm practising BootStrap</h2>
         <div class="table">
           <div class="row gx-1 gy-3">
@@ -284,6 +284,86 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- third part -->
+      <section class="container">
+        <h2 class="text-center">Movies catalog</h2>
+        <div class="col-4">
+          <form method="GET" action="#" autocomplete="off" spellcheck="false">
+            <input
+              type="text"
+              class="form-control mb-3"
+              name="movie_name"
+              id="movie_name"
+              placeholder="ave"
+            />
+
+            <input
+              type="number"
+              class="form-control mb-3"
+              name="movie_number"
+              id="movie_number"
+              placeholder="5"
+            />
+
+            <input
+              type="text"
+              class="form-control mb-3"
+              name="movie_list"
+              id="movie_list"
+              list="movie_listChoices"
+              placeholder="All"
+            />
+            <datalist id="movie_listChoices">
+              <option value="Avengers"></option>
+              <option value="Iron Man"></option>
+              <option value="Spider Man"></option>
+              <option value="Ant Man"></option>
+              <option value="Doctor Strange"></option>
+            </datalist>
+
+            <input
+              type="text"
+              class="form-control mb-3"
+              name="movie_quality"
+              id="movie_quality"
+              list="movie_qualityChoices"
+              placeholder="Rating (high to low)"
+            />
+            <datalist id="movie_qualityChoices">
+              <option value="high"></option>
+              <option value="medium"></option>
+              <option value="not bad"></option>
+              <option value="low"></option>
+            </datalist>
+
+            <button class="btn btn-primary col-12 mb-3" type="submit">
+              Search
+            </button>
+          </form>
+
+          <h3 class="h4 text-center mb-3">Bookmarked movies</h3>
+          <div class="border border-2 mb-3 p-3">
+            <h4 class="h5">Avengers: Infinity War</h4>
+            <button class="btn btn-danger" type="button">Remove</button>
+          </div>
+
+          <div class="border border-2 mb-3 p-3">
+            <h4 class="h5">Avengers: Infinity War</h4>
+            <button class="btn btn-danger" type="button">Remove</button>
+          </div>
+
+          <div class="border border-2 mb-3 p-3">
+            <h4 class="h5">Avengers: Infinity War</h4>
+            <button class="btn btn-danger" type="button">Remove</button>
+          </div>
+        </div>
+
+        <div>
+          <p>Search result: 39</p>
+          <p>Use the form on the left to search for a movie</p>
         </div>
       </section>
     </main>
